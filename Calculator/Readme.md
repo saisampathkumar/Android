@@ -1,7 +1,14 @@
 # HERE IS THE JAVA CODE FOR THE CALCULATOR APP
 
-
-```public class MainActivity extends AppCompatActivity {
+```package com.example.myapplication;
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+public class MainActivity extends AppCompatActivity {
     float element1 = 0;
     float element2 = 0;
     @Override
@@ -265,4 +272,4 @@
         }else
             result.setText(""+text.subSequence(0,text.length()-1));
     }
-}```
+}
