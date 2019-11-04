@@ -1,16 +1,7 @@
 # HERE IS THE JAVA CODE FOR THE CALCULATOR APP
 
 
-package com.example.myapplication;
-import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
-
-public class MainActivity extends AppCompatActivity {
+```public class MainActivity extends AppCompatActivity {
     float element1 = 0;
     float element2 = 0;
     @Override
@@ -23,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
         CharSequence text = result.getText();
         String te = text.toString()+"1";
         result.setText(te);
-
     }
     public void setTwo(View v){
         TextView result = (TextView)findViewById(R.id.Output);
@@ -227,14 +217,11 @@ public class MainActivity extends AppCompatActivity {
             element1 = 0;
         }
     }
-
     public void equals(View v){
         TextView result1 = (TextView)findViewById(R.id.Output2);
         TextView result2 = (TextView)findViewById(R.id.Output);
-
         CharSequence text1 = result1.getText();
         CharSequence text2 = result2.getText();
-
         if((result2.getText() == null || result2.getText() == "" || result2.getText() == "0") ){
             result2.setText("0");
             result1.setText("");
@@ -246,32 +233,25 @@ public class MainActivity extends AppCompatActivity {
         else{
             CharSequence elem1 = text1.subSequence(0,text1.length()-1);
             element1 = Float.parseFloat((String) elem1);
-
             element2 = Float.parseFloat((String) text2);
-
             CharSequence check = text1.subSequence(text1.length()-1, text1.length());
-
             if(check.equals("/")){
                 float a = element1/element2;
-//            Toast.makeText(getApplicationContext(),"Screen is clear"+a , Toast.LENGTH_SHORT).show();
                 result2.setText("");
                 result1.setText(""+a);
             }
             else if(check.equals("x")){
                 float a = element1*element2;
-//            Toast.makeText(getApplicationContext(),"Screen is clear"+a, Toast.LENGTH_SHORT).show();
                 result2.setText("");
                 result1.setText(""+a);
             }
             else if(check.equals("-")){
                 float a = element1-element2;
-                // Toast.makeText(getApplicationContext(),"Screen is clear"+a, Toast.LENGTH_SHORT).show();
                 result2.setText("");
                 result1.setText(""+a);
             }
             else if(check.equals("+")) {
                 float a = element1 + element2;
-//            Toast.makeText(getApplicationContext(),"Screen is clear"+a, Toast.LENGTH_SHORT).show();
                 result2.setText("");
                 result1.setText("" + a);
             }
@@ -284,7 +264,5 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Screen is clear" , Toast.LENGTH_SHORT).show();
         }else
             result.setText(""+text.subSequence(0,text.length()-1));
-
     }
-
-}
+}```
