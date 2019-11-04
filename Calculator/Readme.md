@@ -1,3 +1,8 @@
+# DOWNLOAD APPLICATION HERE:
+<a href="https://github.com/saisampathkumar/Android/raw/master/Calculator/app-release-unsigned.apk">
+  <img src="https://icon-library.net/images/download-icon-image/download-icon-image-23.jpg" width="182" height="142">
+</a>
+
 # PICTURE OF MAIN SCREEN:
 <img src="https://github.com/saisampathkumar/Android/blob/master/Calculator/Screenshot_20191104-003139.jpg" alt="Screen Shot" style="width:200px;">
 
