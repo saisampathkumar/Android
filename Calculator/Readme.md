@@ -88,12 +88,31 @@ public class MainActivity extends AppCompatActivity {
         if((result.getText() == null || result.getText() == "" )&& (result2.getText() == null || result2.getText() == "")){
             Toast.makeText(getApplicationContext(),"Please enter a number " , Toast.LENGTH_SHORT).show();
         }else if((text2 != null)&&(text2 != "") && (text != null) && (text != "")){
+//            Toast.makeText(getApplicationContext(),"|||||||||||||||||||||||||||||||||||||||||" , Toast.LENGTH_SHORT).show();
             CharSequence elem1 = text.subSequence(0,text.length()-1);
             element1 = Float.parseFloat((String) elem1);
             element2 = Float.parseFloat((String) text2);
-            float a = element1/element2;
-            result.setText("");
-            result2.setText(""+a+"/");
+            CharSequence check = text.subSequence(text.length()-1, text.length());
+            if(check.equals("/")){
+                float a = element1/element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("x")){
+                float a = element1*element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("-")){
+                float a = element1-element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("+")) {
+                float a = element1+element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
         }
         else if( (text2 != null)&&(text2 != "")){
             result2.setText(text2+"/");
@@ -130,12 +149,31 @@ public class MainActivity extends AppCompatActivity {
         if((result.getText() == null || result.getText() == "" )&& (result2.getText() == null || result2.getText() == "")){
             Toast.makeText(getApplicationContext(),"Please enter a number " , Toast.LENGTH_SHORT).show();
         }else if((text2 != null)&&(text2 != "") && (text != null) && (text != "")){
+//            Toast.makeText(getApplicationContext(),"|||||||||||||||||||||||||||||||||||||||||" , Toast.LENGTH_SHORT).show();
             CharSequence elem1 = text.subSequence(0,text.length()-1);
             element1 = Float.parseFloat((String) elem1);
             element2 = Float.parseFloat((String) text2);
+            CharSequence check = text.subSequence(text.length()-1, text.length());
+            if(check.equals("/")){
+                float a = element1/element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("x")){
                 float a = element1*element2;
                 result.setText("");
-                result2.setText(""+a+"x");
+                result2.setText(""+a);
+            }
+            else if(check.equals("-")){
+                float a = element1-element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("+")) {
+                float a = element1+element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
         }
         else if( (text2 != null)&&(text2 != "")){
             result2.setText(text2+"x");
@@ -169,12 +207,31 @@ public class MainActivity extends AppCompatActivity {
         if((result.getText() == null || result.getText() == "" )&& (result2.getText() == null || result2.getText() == "")){
             Toast.makeText(getApplicationContext(),"Please enter a number " , Toast.LENGTH_SHORT).show();
         }else if((text2 != null)&&(text2 != "") && (text != null) && (text != "")){
+//            Toast.makeText(getApplicationContext(),"|||||||||||||||||||||||||||||||||||||||||" , Toast.LENGTH_SHORT).show();
             CharSequence elem1 = text.subSequence(0,text.length()-1);
             element1 = Float.parseFloat((String) elem1);
             element2 = Float.parseFloat((String) text2);
-            float a = element1+element2;
-            result.setText("");
-            result2.setText(""+a+"+");
+            CharSequence check = text.subSequence(text.length()-1, text.length());
+            if(check.equals("/")){
+                float a = element1/element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("x")){
+                float a = element1*element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("-")){
+                float a = element1-element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("+")) {
+                float a = element1+element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
 
         }else if( (text2 != null)&&(text2 != "")){
             result2.setText(text2+"+");
@@ -211,12 +268,31 @@ public class MainActivity extends AppCompatActivity {
         if((result.getText() == null || result.getText() == "" )&& (result2.getText() == null || result2.getText() == "")){
             Toast.makeText(getApplicationContext(),"Please enter a number " , Toast.LENGTH_SHORT).show();
         }else if((text2 != null)&&(text2 != "") && (text != null) && (text != "")){
+//            Toast.makeText(getApplicationContext(),"|||||||||||||||||||||||||||||||||||||||||" , Toast.LENGTH_SHORT).show();
             CharSequence elem1 = text.subSequence(0,text.length()-1);
             element1 = Float.parseFloat((String) elem1);
             element2 = Float.parseFloat((String) text2);
-            float a = element1-element2;
-            result.setText("");
-            result2.setText(""+a+"-");
+            CharSequence check = text.subSequence(text.length()-1, text.length());
+            if(check.equals("/")){
+                float a = element1/element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("x")){
+                float a = element1*element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("-")){
+                float a = element1-element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("+")) {
+                float a = element1+element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
         }else if( (text2 != null)&&(text2 != "")){
             result2.setText(text2+"-");
             result.setText("");
