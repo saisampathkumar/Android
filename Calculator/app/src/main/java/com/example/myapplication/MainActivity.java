@@ -90,22 +90,22 @@ public class MainActivity extends AppCompatActivity {
             if(check.equals("/")){
                 float a = element1/element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"/");
             }
             else if(check.equals("x")){
                 float a = element1*element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"/");
             }
             else if(check.equals("-")){
                 float a = element1-element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"/");
             }
             else if(check.equals("+")) {
                 float a = element1+element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"/");
             }
         }
         else if( (text2 != null)&&(text2 != "")){
@@ -151,22 +151,22 @@ public class MainActivity extends AppCompatActivity {
             if(check.equals("/")){
                 float a = element1/element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"x");
             }
             else if(check.equals("x")){
                 float a = element1*element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"x");
             }
             else if(check.equals("-")){
                 float a = element1-element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"x");
             }
             else if(check.equals("+")) {
                 float a = element1+element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"x");
             }
         }
         else if( (text2 != null)&&(text2 != "")){
@@ -209,22 +209,22 @@ public class MainActivity extends AppCompatActivity {
             if(check.equals("/")){
                 float a = element1/element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"+");
             }
             else if(check.equals("x")){
                 float a = element1*element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"+");
             }
             else if(check.equals("-")){
                 float a = element1-element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"+");
             }
             else if(check.equals("+")) {
                 float a = element1+element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"+");
             }
 
         }else if( (text2 != null)&&(text2 != "")){
@@ -270,22 +270,22 @@ public class MainActivity extends AppCompatActivity {
             if(check.equals("/")){
                 float a = element1/element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"-");
             }
             else if(check.equals("x")){
                 float a = element1*element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"-");
             }
             else if(check.equals("-")){
                 float a = element1-element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"-");
             }
             else if(check.equals("+")) {
                 float a = element1+element2;
                 result.setText("");
-                result2.setText(""+a);
+                result2.setText(""+a+"-");
             }
         }else if( (text2 != null)&&(text2 != "")){
             result2.setText(text2+"-");
