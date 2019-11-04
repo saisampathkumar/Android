@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
                     result.setText("");
                 }
                 else {
-                    result2.setText(temp+"/");
+                    result2.setText(text+"/");
                     result.setText("");
                 }
             }
@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
                     result.setText("");
                 }
                 else {
-                    result2.setText(temp+"x");
+                    result2.setText(text+"x");
                     result.setText("");
                 }
             }
@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
                     result.setText("");
                 }
                 else {
-                    result2.setText(temp+"+");
+                    result2.setText(text+"+");
                     result.setText("");
                 }
             }
@@ -220,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
                     result.setText("");
                 }
                 else {
-                    result2.setText(temp+"-");
+                    result2.setText(text+"-");
                     result.setText("");
                 }
             }
