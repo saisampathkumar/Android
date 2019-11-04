@@ -1,5 +1,6 @@
-<h1> Here is the OutputCode for the Calculator<h1>
-
+<html>
+<h1>HERE IS THE JAVA CODE FOR THE CALCULATOR APP</h1>
+</html>
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
