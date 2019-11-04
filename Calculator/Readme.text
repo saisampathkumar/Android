@@ -1,10 +1,8 @@
-<html>
-<h1>HERE IS THE JAVA CODE FOR THE CALCULATOR APP</h1>
-</html>
+HERE IS THE JAVA CODE FOR THE CALCULATOR APP
+
+
 package com.example.myapplication;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,16 +11,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
     float element1 = 0;
     float element2 = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
     }
     public void setOne(View v){
         TextView result = (TextView)findViewById(R.id.Output);
@@ -36,79 +30,67 @@ public class MainActivity extends AppCompatActivity {
         CharSequence text = result.getText();
         String te = text.toString()+"2";
         result.setText(te);
-
     }
     public void setThree(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
         String te = text.toString()+"3";
         result.setText(te);
-
     }
     public void setFour(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
         String te = text.toString()+"4";
         result.setText(te);
-
     }
     public void setFive(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
         String te = text.toString()+"5";
         result.setText(te);
-
     }
     public void setSix(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
         String te = text.toString()+"6";
         result.setText(te);
-
     }
     public void setSeven(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
         String te = text.toString()+"7";
         result.setText(te);
-
     }
     public void setEight(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
         String te = text.toString()+"8";
         result.setText(te);
-
     }
     public void setNine(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
         String te = text.toString()+"9";
         result.setText(te);
-
     }
     public void setZero(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
         String te = text.toString()+"0";
         result.setText(te);
-
     }
     public void setDoubleZero(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
         String te = text.toString()+"00";
         result.setText(te);
-
     }
     public void setDot(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
         String te = text.toString()+".";
         result.setText(te);
-
     }
-
     public void divide(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         TextView result2 = (TextView)findViewById(R.id.Output2);
