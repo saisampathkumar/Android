@@ -1,0 +1,354 @@
+<html>
+<head>
+<title>activity_main.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+.s4 { color: #e8bf6a;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_main.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+&lt;androidx.constraintlayout.widget.ConstraintLayout <span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:background</span><span class="s2">=&quot;#000000&quot;</span>
+    <span class="s1">tools:context</span><span class="s2">=&quot;.MainActivity&quot;</span><span class="s0">&gt;</span>
+
+    &lt;TextView
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/Output2&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;0dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;#FF5722&quot;</span>
+        <span class="s1">android:gravity</span><span class="s2">=&quot;bottom|end&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@android:color/black&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;90sp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@+id/Output&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot; </span><span class="s0">/&gt;</span>
+
+    &lt;TextView
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/Output&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;#FF5722&quot;</span>
+        <span class="s1">android:gravity</span><span class="s2">=&quot;bottom|end&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;@android:color/black&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;60sp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@+id/tableLayout&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot; </span><span class="s0">/&gt;</span>
+
+    &lt;TableLayout
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/tableLayout&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:foregroundGravity</span><span class="s2">=&quot;bottom|center_vertical&quot;</span>
+        <span class="s1">android:gravity</span><span class="s2">=&quot;bottom|center_horizontal&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span><span class="s0">&gt;</span>
+
+        &lt;TableRow
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;20dp&quot;</span>
+            <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span><span class="s0">&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/Brac&quot;</span>
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/brace1&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/Brace2&quot;</span>
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/brac2&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/C&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;clear&quot;</span>
+                <span class="s1">android:shadowColor</span><span class="s2">=&quot;#00BCD4&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/clear&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textColorHighlight</span><span class="s2">=&quot;#FD0000&quot;</span>
+                <span class="s1">android:textColorLink</span><span class="s2">=&quot;#00FF0000&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/Delete&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+
+                <span class="s1">android:onClick</span><span class="s2">=&quot;delete&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/del&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/Divide&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;divide&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/div&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;24sp&quot; </span><span class="s0">/&gt;</span>
+        &lt;/TableRow&gt;
+
+        &lt;TableRow
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;20dp&quot;</span>
+            <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span><span class="s0">&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/seven&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;setSeven&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/seven&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/eight&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;setEight&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/eight&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/nine&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;setNine&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/nine&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/Multiply&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;multiply&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/multi&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot; </span><span class="s0">/&gt;</span>
+        &lt;/TableRow&gt;
+
+        &lt;TableRow
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;20dp&quot;</span>
+            <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span><span class="s0">&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/four&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;setFour&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/four&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot;</span>
+                <span class="s1">tools:layout_editor_absoluteX</span><span class="s2">=&quot;33dp&quot;</span>
+                <span class="s1">tools:layout_editor_absoluteY</span><span class="s2">=&quot;281dp&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/five&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;setFive&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/five&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot;</span>
+                <span class="s1">tools:layout_editor_absoluteX</span><span class="s2">=&quot;136dp&quot;</span>
+                <span class="s1">tools:layout_editor_absoluteY</span><span class="s2">=&quot;281dp&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/six&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;setSix&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/six&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot;</span>
+                <span class="s1">tools:layout_editor_absoluteX</span><span class="s2">=&quot;240dp&quot;</span>
+                <span class="s1">tools:layout_editor_absoluteY</span><span class="s2">=&quot;281dp&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/minus&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;minus&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/minus&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot;</span>
+                <span class="s1">tools:layout_editor_absoluteX</span><span class="s2">=&quot;344dp&quot;</span>
+                <span class="s1">tools:layout_editor_absoluteY</span><span class="s2">=&quot;281dp&quot; </span><span class="s0">/&gt;</span>
+        &lt;/TableRow&gt;
+
+        &lt;TableRow
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;20dp&quot;</span>
+            <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span><span class="s0">&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/one&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;setOne&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/one&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/two&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;setTwo&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/two&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/three&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;setThree&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/three&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/plus&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;plus&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/multiply&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot; </span><span class="s0">/&gt;</span>
+        &lt;/TableRow&gt;
+
+        &lt;TableRow
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;20dp&quot;</span>
+            <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span><span class="s0">&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/zero&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;setZero&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/zero&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/double_zero&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;setDoubleZero&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/double_zero&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/dot&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;setDot&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/dot&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot; </span><span class="s0">/&gt;</span>
+
+            &lt;Button
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/equals&quot;</span>
+                <span class="s1">style</span><span class="s2">=&quot;@style/Widget.AppCompat.Button.Borderless&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;10&quot;</span>
+                <span class="s1">android:onClick</span><span class="s2">=&quot;equals&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/equals&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot; </span><span class="s0">/&gt;</span>
+        &lt;/TableRow&gt;
+    &lt;/TableLayout&gt;
+
+&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</pre>
+</body>
+</html>

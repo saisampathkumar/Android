@@ -1,111 +1,79 @@
 package com.example.myapplication;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 public class MainActivity extends AppCompatActivity {
-
     float element1 = 0;
     float element2 = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
     }
     public void setOne(View v){
         TextView result = (TextView)findViewById(R.id.Output);
+        Button b = (Button)findViewById(R.id.one);
         CharSequence text = result.getText();
-        String te = text.toString()+"1";
-        result.setText(te);
-
+        result.setText(text+"1");
     }
     public void setTwo(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
-        String te = text.toString()+"2";
-        result.setText(te);
-
+        result.setText(text+"2");
     }
     public void setThree(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
-        String te = text.toString()+"3";
-        result.setText(te);
-
+        result.setText(text+"3");
     }
     public void setFour(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
-        String te = text.toString()+"4";
-        result.setText(te);
-
+        result.setText(text+"4");
     }
     public void setFive(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
-        String te = text.toString()+"5";
-        result.setText(te);
-
+        result.setText(text+"5");
     }
     public void setSix(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
-        String te = text.toString()+"6";
-        result.setText(te);
-
+        result.setText(text+"6");
     }
     public void setSeven(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
-        String te = text.toString()+"7";
-        result.setText(te);
-
+        result.setText(text+"7");
     }
     public void setEight(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
-        String te = text.toString()+"8";
-        result.setText(te);
-
+        result.setText(text+"8");
     }
     public void setNine(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
-        String te = text.toString()+"9";
-        result.setText(te);
-
+        result.setText(text+"9");
     }
     public void setZero(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
-        String te = text.toString()+"0";
-        result.setText(te);
-
+        result.setText(text+"0");
     }
     public void setDoubleZero(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
-        String te = text.toString()+"00";
-        result.setText(te);
-
+        result.setText(text+"00");
     }
     public void setDot(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         CharSequence text = result.getText();
-        String te = text.toString()+".";
-        result.setText(te);
-
+        result.setText(text+".");
     }
-
     public void divide(View v){
         TextView result = (TextView)findViewById(R.id.Output);
         TextView result2 = (TextView)findViewById(R.id.Output2);
@@ -115,17 +83,30 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Please enter a number " , Toast.LENGTH_SHORT).show();
         }else if((text2 != null)&&(text2 != "") && (text != null) && (text != "")){
 //            Toast.makeText(getApplicationContext(),"|||||||||||||||||||||||||||||||||||||||||" , Toast.LENGTH_SHORT).show();
-
             CharSequence elem1 = text.subSequence(0,text.length()-1);
-
             element1 = Float.parseFloat((String) elem1);
-
             element2 = Float.parseFloat((String) text2);
-
-            float a = element1/element2;
-            result.setText("");
-            result2.setText(""+a+"/");
-
+            CharSequence check = text.subSequence(text.length()-1, text.length());
+            if(check.equals("/")){
+                float a = element1/element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("x")){
+                float a = element1*element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("-")){
+                float a = element1-element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("+")) {
+                float a = element1+element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
         }
         else if( (text2 != null)&&(text2 != "")){
             result2.setText(text2+"/");
@@ -142,7 +123,6 @@ public class MainActivity extends AppCompatActivity {
                         result.setText("");
                     }else
                         equals(v);
-
                 }
                 else {
                     result2.setText(text+"/");
@@ -164,17 +144,30 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Please enter a number " , Toast.LENGTH_SHORT).show();
         }else if((text2 != null)&&(text2 != "") && (text != null) && (text != "")){
 //            Toast.makeText(getApplicationContext(),"|||||||||||||||||||||||||||||||||||||||||" , Toast.LENGTH_SHORT).show();
-
             CharSequence elem1 = text.subSequence(0,text.length()-1);
-
             element1 = Float.parseFloat((String) elem1);
-
             element2 = Float.parseFloat((String) text2);
-
+            CharSequence check = text.subSequence(text.length()-1, text.length());
+            if(check.equals("/")){
+                float a = element1/element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("x")){
                 float a = element1*element2;
                 result.setText("");
-                result2.setText(""+a+"x");
-
+                result2.setText(""+a);
+            }
+            else if(check.equals("-")){
+                float a = element1-element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("+")) {
+                float a = element1+element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
         }
         else if( (text2 != null)&&(text2 != "")){
             result2.setText(text2+"x");
@@ -209,16 +202,30 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Please enter a number " , Toast.LENGTH_SHORT).show();
         }else if((text2 != null)&&(text2 != "") && (text != null) && (text != "")){
 //            Toast.makeText(getApplicationContext(),"|||||||||||||||||||||||||||||||||||||||||" , Toast.LENGTH_SHORT).show();
-
             CharSequence elem1 = text.subSequence(0,text.length()-1);
-
             element1 = Float.parseFloat((String) elem1);
-
             element2 = Float.parseFloat((String) text2);
-
-            float a = element1+element2;
-            result.setText("");
-            result2.setText(""+a+"+");
+            CharSequence check = text.subSequence(text.length()-1, text.length());
+            if(check.equals("/")){
+                float a = element1/element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("x")){
+                float a = element1*element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("-")){
+                float a = element1-element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("+")) {
+                float a = element1+element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
 
         }else if( (text2 != null)&&(text2 != "")){
             result2.setText(text2+"+");
@@ -235,7 +242,6 @@ public class MainActivity extends AppCompatActivity {
                         result.setText("");
                     }else
                         equals(v);
-
                 }
                 else {
                     result2.setText(text+"+");
@@ -257,17 +263,30 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Please enter a number " , Toast.LENGTH_SHORT).show();
         }else if((text2 != null)&&(text2 != "") && (text != null) && (text != "")){
 //            Toast.makeText(getApplicationContext(),"|||||||||||||||||||||||||||||||||||||||||" , Toast.LENGTH_SHORT).show();
-
             CharSequence elem1 = text.subSequence(0,text.length()-1);
-
             element1 = Float.parseFloat((String) elem1);
-
             element2 = Float.parseFloat((String) text2);
-
-            float a = element1-element2;
-            result.setText("");
-            result2.setText(""+a+"-");
-
+            CharSequence check = text.subSequence(text.length()-1, text.length());
+            if(check.equals("/")){
+                float a = element1/element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("x")){
+                float a = element1*element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("-")){
+                float a = element1-element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
+            else if(check.equals("+")) {
+                float a = element1+element2;
+                result.setText("");
+                result2.setText(""+a);
+            }
         }else if( (text2 != null)&&(text2 != "")){
             result2.setText(text2+"-");
             result.setText("");
@@ -311,10 +330,8 @@ public class MainActivity extends AppCompatActivity {
     public void equals(View v){
         TextView result1 = (TextView)findViewById(R.id.Output2);
         TextView result2 = (TextView)findViewById(R.id.Output);
-
         CharSequence text1 = result1.getText();
         CharSequence text2 = result2.getText();
-
         if((result2.getText() == null || result2.getText() == "" || result2.getText() == "0") ){
             result2.setText("0");
             result1.setText("");
@@ -326,11 +343,8 @@ public class MainActivity extends AppCompatActivity {
         else{
             CharSequence elem1 = text1.subSequence(0,text1.length()-1);
             element1 = Float.parseFloat((String) elem1);
-
             element2 = Float.parseFloat((String) text2);
-
             CharSequence check = text1.subSequence(text1.length()-1, text1.length());
-
             if(check.equals("/")){
                 float a = element1/element2;
                 result2.setText("");
@@ -362,5 +376,4 @@ public class MainActivity extends AppCompatActivity {
             result.setText(""+text.subSequence(0,text.length()-1));
 
     }
-
 }
