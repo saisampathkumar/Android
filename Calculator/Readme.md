@@ -1,6 +1,6 @@
 # DOWNLOAD APPLICATION HERE:
 <a href="https://github.com/saisampathkumar/Android/raw/master/Calculator/app-release-unsigned.apk">
-  <img src="https://github.com/saisampathkumar/Android/blob/master/Calculator/IMGBIN_mathematician-mathematics-stock-photography-png_cYmrd363.png?raw=true" width="104" height="142">
+  <img src="https://icon-library.net/images/download-icon-image/download-icon-image-23.jpg" width="182" height="142">
 </a>
 
 # PICTURE OF MAIN SCREEN:
