@@ -113,7 +113,21 @@ public class MainActivity extends AppCompatActivity {
         CharSequence text2 = result.getText();
         if((result.getText() == null || result.getText() == "" )&& (result2.getText() == null || result2.getText() == "")){
             Toast.makeText(getApplicationContext(),"Please enter a number " , Toast.LENGTH_SHORT).show();
-        }else if( (text2 != null)&&(text2 != "")){
+        }else if((text2 != null)&&(text2 != "") && (text != null) && (text != "")){
+//            Toast.makeText(getApplicationContext(),"|||||||||||||||||||||||||||||||||||||||||" , Toast.LENGTH_SHORT).show();
+
+            CharSequence elem1 = text.subSequence(0,text.length()-1);
+
+            element1 = Float.parseFloat((String) elem1);
+
+            element2 = Float.parseFloat((String) text2);
+
+            float a = element1/element2;
+            result.setText("");
+            result2.setText(""+a+"/");
+
+        }
+        else if( (text2 != null)&&(text2 != "")){
             result2.setText(text2+"/");
             result.setText("");
         }else if((text != null) && (text != "")){
@@ -122,9 +136,13 @@ public class MainActivity extends AppCompatActivity {
                 CharSequence check = text.subSequence(text.length()-1, text.length());
                 if(check.equals("/") || check.equals("+") || check.equals("-") || check.equals("x"))
                 {
-                    temp = text.subSequence(0,text.length()-1);
-                    result2.setText(temp+"/");
-                    result.setText("");
+                    if(text2 == null || text2 == ""){
+                        temp = text.subSequence(0,text.length()-1);
+                        result2.setText(temp+"/");
+                        result.setText("");
+                    }else
+                        equals(v);
+
                 }
                 else {
                     result2.setText(text+"/");
@@ -144,7 +162,21 @@ public class MainActivity extends AppCompatActivity {
         CharSequence text2 = result.getText();
         if((result.getText() == null || result.getText() == "" )&& (result2.getText() == null || result2.getText() == "")){
             Toast.makeText(getApplicationContext(),"Please enter a number " , Toast.LENGTH_SHORT).show();
-        }else if( (text2 != null)&&(text2 != "")){
+        }else if((text2 != null)&&(text2 != "") && (text != null) && (text != "")){
+//            Toast.makeText(getApplicationContext(),"|||||||||||||||||||||||||||||||||||||||||" , Toast.LENGTH_SHORT).show();
+
+            CharSequence elem1 = text.subSequence(0,text.length()-1);
+
+            element1 = Float.parseFloat((String) elem1);
+
+            element2 = Float.parseFloat((String) text2);
+
+                float a = element1*element2;
+                result.setText("");
+                result2.setText(""+a+"x");
+
+        }
+        else if( (text2 != null)&&(text2 != "")){
             result2.setText(text2+"x");
             result.setText("");
         }else if((text != null) && (text != "")){
@@ -153,9 +185,9 @@ public class MainActivity extends AppCompatActivity {
                 CharSequence check = text.subSequence(text.length()-1, text.length());
                 if(check.equals("/") || check.equals("+") || check.equals("-") || check.equals("x"))
                 {
-                    temp = text.subSequence(0,text.length()-1);
-                    result2.setText(temp+"x");
-                    result.setText("");
+                        temp = text.subSequence(0,text.length()-1);
+                        result2.setText(temp+"x");
+                        result.setText("");
                 }
                 else {
                     result2.setText(text+"x");
@@ -175,6 +207,19 @@ public class MainActivity extends AppCompatActivity {
         CharSequence text2 = result.getText();
         if((result.getText() == null || result.getText() == "" )&& (result2.getText() == null || result2.getText() == "")){
             Toast.makeText(getApplicationContext(),"Please enter a number " , Toast.LENGTH_SHORT).show();
+        }else if((text2 != null)&&(text2 != "") && (text != null) && (text != "")){
+//            Toast.makeText(getApplicationContext(),"|||||||||||||||||||||||||||||||||||||||||" , Toast.LENGTH_SHORT).show();
+
+            CharSequence elem1 = text.subSequence(0,text.length()-1);
+
+            element1 = Float.parseFloat((String) elem1);
+
+            element2 = Float.parseFloat((String) text2);
+
+            float a = element1+element2;
+            result.setText("");
+            result2.setText(""+a+"+");
+
         }else if( (text2 != null)&&(text2 != "")){
             result2.setText(text2+"+");
             result.setText("");
@@ -184,9 +229,13 @@ public class MainActivity extends AppCompatActivity {
                 CharSequence check = text.subSequence(text.length()-1, text.length());
                 if(check.equals("/") || check.equals("+") || check.equals("-") || check.equals("x"))
                 {
-                    temp = text.subSequence(0,text.length()-1);
-                    result2.setText(temp+"+");
-                    result.setText("");
+                    if(text2 == null || text2 == ""){
+                        temp = text.subSequence(0,text.length()-1);
+                        result2.setText(temp+"+");
+                        result.setText("");
+                    }else
+                        equals(v);
+
                 }
                 else {
                     result2.setText(text+"+");
@@ -206,6 +255,19 @@ public class MainActivity extends AppCompatActivity {
         CharSequence text2 = result.getText();
         if((result.getText() == null || result.getText() == "" )&& (result2.getText() == null || result2.getText() == "")){
             Toast.makeText(getApplicationContext(),"Please enter a number " , Toast.LENGTH_SHORT).show();
+        }else if((text2 != null)&&(text2 != "") && (text != null) && (text != "")){
+//            Toast.makeText(getApplicationContext(),"|||||||||||||||||||||||||||||||||||||||||" , Toast.LENGTH_SHORT).show();
+
+            CharSequence elem1 = text.subSequence(0,text.length()-1);
+
+            element1 = Float.parseFloat((String) elem1);
+
+            element2 = Float.parseFloat((String) text2);
+
+            float a = element1-element2;
+            result.setText("");
+            result2.setText(""+a+"-");
+
         }else if( (text2 != null)&&(text2 != "")){
             result2.setText(text2+"-");
             result.setText("");
@@ -215,9 +277,12 @@ public class MainActivity extends AppCompatActivity {
                 CharSequence check = text.subSequence(text.length()-1, text.length());
                 if(check.equals("/") || check.equals("+") || check.equals("-") || check.equals("x"))
                 {
-                    temp = text.subSequence(0,text.length()-1);
-                    result2.setText(temp+"-");
-                    result.setText("");
+                    if(text2 == null || text2 == ""){
+                        temp = text.subSequence(0,text.length()-1);
+                        result2.setText(temp+"-");
+                        result.setText("");
+                    }else
+                        equals(v);
                 }
                 else {
                     result2.setText(text+"-");
@@ -268,25 +333,21 @@ public class MainActivity extends AppCompatActivity {
 
             if(check.equals("/")){
                 float a = element1/element2;
-//            Toast.makeText(getApplicationContext(),"Screen is clear"+a , Toast.LENGTH_SHORT).show();
                 result2.setText("");
                 result1.setText(""+a);
             }
             else if(check.equals("x")){
                 float a = element1*element2;
-//            Toast.makeText(getApplicationContext(),"Screen is clear"+a, Toast.LENGTH_SHORT).show();
                 result2.setText("");
                 result1.setText(""+a);
             }
             else if(check.equals("-")){
                 float a = element1-element2;
-                // Toast.makeText(getApplicationContext(),"Screen is clear"+a, Toast.LENGTH_SHORT).show();
                 result2.setText("");
                 result1.setText(""+a);
             }
             else if(check.equals("+")) {
                 float a = element1 + element2;
-//            Toast.makeText(getApplicationContext(),"Screen is clear"+a, Toast.LENGTH_SHORT).show();
                 result2.setText("");
                 result1.setText("" + a);
             }
